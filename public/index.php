@@ -35,6 +35,23 @@ $pageTitle = match ($page) {
             <h1>Anne &amp; Bryan</h1>
             <p>Welcome to our corner of the internet.</p>
         </section>
+
+        <section class="game">
+            <h2>Tic-Tac-Toe</h2>
+            <p id="game-status">Your turn (X)</p>
+            <div class="board" id="board">
+                <button class="cell" data-index="0"></button>
+                <button class="cell" data-index="1"></button>
+                <button class="cell" data-index="2"></button>
+                <button class="cell" data-index="3"></button>
+                <button class="cell" data-index="4"></button>
+                <button class="cell" data-index="5"></button>
+                <button class="cell" data-index="6"></button>
+                <button class="cell" data-index="7"></button>
+                <button class="cell" data-index="8"></button>
+            </div>
+            <button class="reset-btn" id="reset">New Game</button>
+        </section>
 <?php elseif ($page === 'about'): ?>
         <section class="about">
             <h1>About Us</h1>
@@ -48,6 +65,9 @@ $pageTitle = match ($page) {
 <?php endif; ?>
     </main>
 
+<?php if ($page === 'home'): ?>
+    <script src="/js/tictactoe.js"></script>
+<?php endif; ?>
     <footer>
         <p>&copy; <?= date('Y') ?> Anne &amp; Bryan St. Clair</p>
     </footer>

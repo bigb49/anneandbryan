@@ -130,6 +130,81 @@ main {
     line-height: 1.8;
 }
 
+/* Game */
+.game {
+    text-align: center;
+    padding: 0 0 4rem;
+}
+
+.game h2 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+#game-status {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    max-width: 280px;
+    margin: 0 auto 1.5rem;
+}
+
+.cell {
+    aspect-ratio: 1;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.cell:hover:not(:disabled) {
+    background: var(--color-accent-light);
+}
+
+.cell:disabled {
+    cursor: default;
+}
+
+.cell.x {
+    color: var(--color-accent);
+}
+
+.cell.o {
+    color: #b07a5b;
+}
+
+.cell.winner {
+    background: var(--color-accent-light);
+}
+
+.reset-btn {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    padding: 0.5rem 1.4rem;
+    background: var(--color-accent);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.reset-btn:hover {
+    background: var(--color-text);
+}
+
 /* Footer */
 footer {
     border-top: 1px solid var(--color-border);
