@@ -130,6 +130,52 @@ main {
     line-height: 1.8;
 }
 
+/* Weather */
+.weather {
+    text-align: center;
+    padding: 0 0 3rem;
+}
+
+.weather h2 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--color-muted);
+    margin-bottom: 0.6rem;
+}
+
+.weather-loading {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+.weather-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+
+.weather-icon {
+    font-size: 2.4rem;
+}
+
+.weather-temp {
+    font-size: 2rem;
+    font-family: var(--font-heading);
+}
+
+.weather-desc {
+    font-size: 1rem;
+    color: var(--color-muted);
+}
+
+.weather-extra {
+    color: var(--color-muted);
+    font-size: 0.8rem;
+}
+
 /* Game */
 .game {
     text-align: center;

@@ -36,6 +36,11 @@ $pageTitle = match ($page) {
             <p>Welcome to our corner of the internet.</p>
         </section>
 
+        <section class="weather" id="weather">
+            <h2>Mountain View, CA</h2>
+            <div class="weather-loading">Loading weather...</div>
+        </section>
+
         <section class="game">
             <h2>Tic-Tac-Toe</h2>
             <p id="game-status">Your turn (X)</p>
@@ -66,6 +71,7 @@ $pageTitle = match ($page) {
     </main>
 
 <?php if ($page === 'home'): ?>
+    <script src="/js/weather.js"></script>
     <script src="/js/tictactoe.js"></script>
 <?php endif; ?>
     <footer>
